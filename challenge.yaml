@@ -1,0 +1,13 @@
+name: minibomb
+author: Jason
+value: 30
+description: |-
+  It's a miniature version of the bomb lab! Connect to it at `nc acmcyber.com 10102`.
+
+  Feel free to run on SEASnet if you can't run it locally.
+
+flag:
+  file: ./flag.txt
+
+provide:
+  - ./minibomb

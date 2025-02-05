@@ -1,0 +1,7 @@
+version: "3"
+services:
+  chall:
+    build: .
+    ports:
+      - "10102:5000"
+    privileged: true
