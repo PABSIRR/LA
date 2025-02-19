@@ -48,11 +48,11 @@ int magic(long long n) {
     }
     return v;
 }
-int factorial(long long n){
+int mystery2(long long n){
     if(n == 1){
         return 1;
     } else {
-        return n * factorial(n-1);;
+        return n * mystery2(n-1);;
     }
 
 }
@@ -70,7 +70,7 @@ int main(void) {
     puts("What's the number cuh?");
     fgets(buf, 256, stdin);
     long long n = atoll(buf);
-    if(factorial(n) != 24){
+    if(mystery2(n) != 24){
         explode();
     }
     // puts("What's my favorite number?");
