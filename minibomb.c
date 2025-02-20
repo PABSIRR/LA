@@ -24,23 +24,23 @@ void defuse() {
     exit(0);
 }
 
-int magic(long long n) {
+int magic(int n) {
     int v = 10;
     switch (n) {
-        case 1337133713370LL:
+        case 7:
             v = 0;
             break;
-        case 1337133713371LL:
+        case 9:
             v = 1;
-        case 1337133713372LL:
+        case 10:
             v += 1;
-        case 1337133713373LL:
+        case 12:
             v *= 2;
             break;
-        case 1337133713374LL:
+        case 13:
             v = 42;
             break;
-        case 1337133713375LL:
+        case 14:
             v = 1337;
             break;
         default:
@@ -73,12 +73,12 @@ int main(void) {
     if(mystery2(n) != 24){
         explode();
     }
-    // puts("What's my favorite number?");
-    // fgets(buf, 256, stdin);
-    // long long n = atoll(buf);
-    // if (magic(n) != 22) {
-    //     explode();
-    // }
+    puts("What's my favorite number?");
+    fgets(buf, 256, stdin);
+    int x = atoi(buf);
+    if (magic(x) != 22) {
+        explode();
+    }
     defuse();
     return 0;
 }
