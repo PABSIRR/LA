@@ -29,6 +29,24 @@ ssh username@lnxsrv13.seas.ucla.edu
 
 You'll be prompted for your password. Once logged in, you'll be in your home directory on the server.
 
+#### Windows
+
+For adding your own functions [found here](#creating-your-own-challenge), if you dislike using Emacs / Vim / Nano, you could integrate WSL 2 with Vscode. 
+
+First, download WSL 2 on your Windows machine by opening Command Prompt in Administrator mode and running
+```powershell
+wsl --install #Install WSL if not already there
+wsl --set-default-version 2 #Set version to WSL 2
+```
+
+For further reference, consult these links -> 
+[Install / Run WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
+[Connect Vscode to WSL 2](https://code.visualstudio.com/blogs/2019/09/03/wsl2)
+[Connect seas to Vscode](https://code.visualstudio.com/docs/remote/ssh#:~:text=Connect%20to%20a%20remote%20host&text=In%20VS%20Code%2C%20select%20Remote,to%20select%20the%20type%20manually.)
+
+
+
+
 ### Transferring Files to the Server
 
 If you've modified the bomb locally and need to transfer it to the server:
